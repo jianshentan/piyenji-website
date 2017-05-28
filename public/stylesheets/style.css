@@ -44,6 +44,21 @@ body {
   position: absolute;
   bottom: 0px;
 }
+#video-phone-info {
+  background-color: black;
+  height: 24px;
+  font-size: 0.8em;
+}
+#video-time,
+#video-signal,
+#video-battery{
+  width: 100%;
+  position: absolute;
+  color: white;
+}
+#video-time { text-align: center; }
+#video-battery { text-align: right; }
+#video-signal { text-align: left; }
 
 /* Menu screen */
 

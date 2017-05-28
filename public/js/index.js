@@ -9,7 +9,7 @@ $(document).ready(function() {
   // set time
   var time = new Date();
   time = time.toLocaleString('en-US', { hour: 'numeric',minute:'numeric', hour12: true });
-  $("#time").html(time);
+  $("#time, #video-time").html(time);
   
   if (!mobile) {
     // make iphone and screens float
