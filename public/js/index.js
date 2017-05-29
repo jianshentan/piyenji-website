@@ -62,7 +62,7 @@ $(document).ready(function() {
   // easter egg - video on desktop only
   var videoMode = false;
   $("#video-screen").hide();
-  $("#hv-logo").click(function() {
+  $("#video-mode, #video-record").click(function() {
     if (videoMode) {
       $("#menu-screen, #convo-screen").slideDown("fast"); 
       $("#video-screen").hide();

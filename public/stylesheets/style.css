@@ -60,6 +60,28 @@ body {
 #video-battery { text-align: right; }
 #video-signal { text-align: left; }
 
+#video-record {
+  border: 6px solid white;
+  border-radius: 50%;
+  height: 75px;
+  width: 75px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  cursor: pointer;
+}
+#video-record-button {
+  border-radius: 8px;
+  height: 36px;
+  width: 36px;
+  background-color: red;
+  position: absolute;     
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
 /* Menu screen */
 
 #menu-screen {
@@ -200,6 +222,24 @@ body {
 }
 
 /* --- Hv logo --- */
+#video-mode {
+  z-index: 200;
+  position: absolute;
+  width: 55px;
+  height: 55px;
+  margin: 20px;
+  margin-right: 22.5px;
+  cursor: pointer;
+  top: 0px;
+  right: 0;
+  border-radius: 50%;
+  border: 5px solid #30A3FC;
+  color: #30A3FC;
+  text-align: center;
+  line-height: 43px;
+  font-size: 25px;
+  background: white;
+}
 #hv-logo {
   z-index: 200;
   position: absolute;

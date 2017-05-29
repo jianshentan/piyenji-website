@@ -35,6 +35,8 @@
   	
   	<!-- add google fonts -->
   	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  	<!-- add font-awesome -->
+  	<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
   
 		<!-- add custom stylesheets -->
 		<link rel="stylesheet" href="stylesheets/style.css">
@@ -71,19 +73,26 @@
 		<img id="iphone" src="/images/iphone.png">
 		<iframe id="video" src="https://www.youtube.com/embed/JuFvE1eIfhQ?playlist=JuFvE1eIfhQ&rel=0&controls=0&showinfo=0&autoplay=1&loop=1" frameborder="0" volume="0" allowfullscreen></iframe>
 		<div id="overlay"></div>
-		<img id="hv-logo" src="images/hv-logo.png">
+		<!--<img id="hv-logo" src="images/hv-logo.png">-->
+		<div id="video-mode"><i class="fa fa-camera" aria-hidden="true"></i></div>
 		<% } %>
 		
 		<div id="master-screen">
 			
+			<% if (mobile != "true") { %>
 			<div id="video-screen" class="screen">
 				<div id="video-phone-info" style="padding-top:2px;">
 					<div id="video-time"></div>
 					<div id="video-battery" style="padding-right:5px;">battery</div>
 					<div id="video-signal" style="padding-left:5px;">...</div>
 				</div>
-				<div id="video-footer"> &nbsp; <3 &nbsp; </div>
+				<div id="video-footer"> 
+					<div id="video-record">
+						<div id="video-record-button"></div>
+					</div>
+				</div>
 			</div>
+			<% } %>
 			
 			<div id="convo-screen" class="screen active" style="overflow-y:scroll !important;">
 				<div id="convo" style="padding-top:110px;">
@@ -114,7 +123,7 @@
 						
 					<div class="bubble-set">
 						<div class="bubble-container from-container">
-							<div class="inline-sticker"><img src="/images/logo.png" height="120px"></div>
+							<div class="inline-sticker"><img src="/images/piyenji-logo.png" height="120px"></div>
 						</div>
 						<div class="bubble-container from-container">
 							<div class="frombubble bubble ">(/Pee-En-Jee/) - I am an iOS sticker gallery that showcases small collections of work from artists, animators, and illustrators!</div>
@@ -147,22 +156,25 @@
 					
 					<div class="bubble-set">
 						<div class="bubble-container from-container">
-							<div class="inline-sticker"><img src="/images/appstore.png" height="80px"></div>
+							<div class="frombubble bubble ">We're featuring 3 artists rn.</div>
 						</div>
 						<div class="bubble-container from-container">
-							<div class="frombubble bubble ">@JJ</div>
+							<div class="frombubble bubble ">@digijing  ⬇️ 👀</div>
 						</div>
 						<div class="bubble-container from-container">
-							<div class="inline-sticker"><img src="/images/appstore.png" height="80px"></div>
+							<div class="inline-sticker"><img src="/images/digijing-haha.gif" width="80%"></div>
 						</div>
 						<div class="bubble-container from-container">
-							<div class="frombubble bubble ">@DavidTorres</div>
+							<div class="frombubble bubble ">@JamesOrlando ⬇️ 👀</div>
 						</div>
 						<div class="bubble-container from-container">
-							<div class="inline-sticker"><img src="/images/appstore.png" height="80px"></div>
+							<div class="inline-sticker"><img src="/images/digijing-eyeballs.gif" height="80%"></div>
 						</div>
 						<div class="bubble-container from-container">
-							<div class="frombubble bubble ">@JamesOrlando</div>
+							<div class="frombubble bubble ">@artist3 ⬇️ 👀</div>
+						</div>
+						<div class="bubble-container from-container">
+							<div class="inline-sticker"><img src="/images/digijing-facemask.gif" height="80%"></div>
 						</div>
 					</div>
 						
@@ -177,13 +189,13 @@
 							<div class="frombubble bubble ">Yeah! But if you are feeling thankful you can hit up these bbs on Venmo →</div>
 						</div>
 						<div class="bubble-container from-container">
-							<div class="frombubble bubble ">@jjvenmo</div>
+							<div class="frombubble bubble ">@digijing</div>
 						</div>
 						<div class="bubble-container from-container">
-							<div class="frombubble bubble ">@davidvenmo</div>
+							<div class="frombubble bubble ">@artist2</div>
 						</div>
 						<div class="bubble-container from-container">
-							<div class="frombubble bubble ">@jamesvenmo</div>
+							<div class="frombubble bubble ">@artist3</div>
 						</div>
 						<div class="bubble-container from-container">
 							<div class="frombubble bubble ">💵 💰 🤑 ♥️ </div>
@@ -204,7 +216,7 @@
 							<div class="frombubble bubble ">Piyenji is created and curated by Hello Velocity!</div>
 						</div>
 						<div class="bubble-container from-container">
-							<div class="frombubble bubble ">If you would like to pitch a collection concept email us at friend@hellovelocity.com</div>
+							<div class="frombubble bubble ">If you would like to pitch a collection concept email us at <a href="mailto:friend@hellovelocity.com" target="_blank">friend@hellovelocity.com</a></div>
 						</div>
 					</div>		
 					
@@ -225,15 +237,36 @@
 							<div class="frombubble bubble ">haha, I will show you!  ⬇️ 👀 </div>
 						</div>
 						<div class="bubble-container from-container">
-							<div class="inline-sticker"><img src="/images/appstore.png" height="80px"></div>
+							<div class="frombubble bubble ">
+								click this first:
+								<br>
+								<img src="/images/instruction1.jpg" width="100%" style="margin-top:5px;margin-bottom:5px;">
+								<br>
+							</div>
 						</div>
 						<div class="bubble-container from-container">
-							<div class="inline-sticker"><img src="/images/appstore.png" height="80px"></div>
+							<div class="frombubble bubble ">
+								then you've gotta click this:
+								<br>
+								<img src="/images/instruction2.jpg" width="100%" style="margin-top:5px;margin-bottom:5px;">
+								<br>
+							</div>
 						</div>
 						<div class="bubble-container from-container">
-							<div class="inline-sticker"><img src="/images/appstore.png" height="80px"></div>
+							<div class="frombubble bubble ">
+								and there it is :)
+								<br>
+								<img src="/images/instruction3.jpg" width="100%" style="margin-top:5px;margin-bottom:5px;">
+								<br>
+							</div>
 						</div>
 					</div>
+					
+					<div class="bubble-set">
+						<div class="bubble-container to-container">
+							<div class="tobubble bubble">thx <3 </div>
+						</div>
+					</div>	
 					
 					<% if (mobile == "true") { %>
 					<!-- if safari! -->
@@ -253,20 +286,20 @@
 					<div id="contacts">
 						<div class="row">
 							<div id="home" class="col-xs-3 contact active">
-								<div class="contact-img"><img src="/images/hv-logo.png" style="width:40px;"></div>
-								<div class="contact-name">piyenji</div>
+								<div class="contact-img"><img src="/images/piyenji-logo.png" style="width:40px;"></div>
+								<div class="contact-name">home</div>
 							</div>	
 							<div id="artist1" class="col-xs-3 contact">
-								<div class="contact-img"><img src="/images/hv-logo.png" style="width:40px;"></div>
-								<div class="contact-name">jjlin</div>
+								<div class="contact-img"><img src="/images/digijing-soazn.gif" style="width:40px;"></div>
+								<div class="contact-name">digijing</div>
 							</div>	
 							<div id="artist2" class="col-xs-3 contact">
 								<div class="contact-img"><img src="/images/hv-logo.png" style="width:40px;"></div>
-								<div class="contact-name">hv</div>
+								<div class="contact-name">jamesorlando</div>
 							</div>	
 							<div id="artist3" class="col-xs-3 contact">
 								<div class="contact-img"><img src="/images/hv-logo.png" style="width:40px;"></div>
-								<div class="contact-name">jameso</div>
+								<div class="contact-name">artist3</div>
 							</div>	
 						</div>
 					</div>
@@ -276,12 +309,12 @@
 			<div id="artist1-page" class="screen artist-screen" style="padding-top:110px;">
 				<div class="artist-page-body">
 					<div class="row">
-						<div class="col-xs-6"><img src="/images/hv-logo.png"></div>
-						<div class="col-xs-6"><img src="/images/hv-logo.png"></div>
+						<div class="col-xs-6"><img src="/images/digijing-haha.gif" height="140px"></div>
+						<div class="col-xs-6"><img src="/images/digijing-eyeballs.gif" height="140px"></div>
 					</div>
 					<div class="row">
-						<div class="col-xs-6"><img src="/images/hv-logo.png"></div>
-						<div class="col-xs-6"><img src="/images/hv-logo.png"></div>
+						<div class="col-xs-6"><img src="/images/digijing-facemask.gif" height="140px"></div>
+						<div class="col-xs-6"><img src="/images/digijing-soazn.gif" height="140px"></div>
 					</div>
 					<div class="row">
 						<div class="col-xs-6"><img src="/images/hv-logo.png"></div>
