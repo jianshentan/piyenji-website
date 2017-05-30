@@ -58,7 +58,17 @@ body {
 }
 #video-time { text-align: center; }
 #video-battery { text-align: right; }
-#video-signal { text-align: left; }
+#video-signal { text-align: left; margin-right:4px; }
+.video-signal-circle {
+  border: 1px solid white;
+  width: 7px;
+  height: 7px;
+  display: inline-block;
+  border-radius: 50px;
+}
+.video-signal-circle.fill {
+  background-color: white;
+}
 
 #video-record {
   border: 6px solid white;
@@ -108,10 +118,20 @@ body {
 #time { text-align: center; }
 #battery { text-align: right; }
 #signal { text-align: left; }
+.signal-circle {
+  border: 1px solid black;
+  width: 7px;
+  height: 7px;
+  display: inline-block;
+  border-radius: 50px;
+}
+.signal-circle.fill {
+  background-color: black;
+}
 #contacts {
   padding-top: 24px;  
-  padding-left: 15%;
-  padding-right: 15%;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 .contact {
   cursor: pointer;
