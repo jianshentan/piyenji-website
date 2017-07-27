@@ -19,4 +19,9 @@ router.get('/terms', function(req, res, next) {
   }
 });
 
+router.get('/download', function(req, res, next) {
+  res.redirect('https://itunes.apple.com/us/app/piyenji-sticker-gallery/id1233637881?mt=8')
+});
+
+
 module.exports = router;
