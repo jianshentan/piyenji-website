@@ -75,6 +75,7 @@
 		<div id="overlay"></div>
 		<!--<img id="hv-logo" src="images/hv-logo.png">-->
 		<div id="video-mode"><i class="fa fa-camera" aria-hidden="true"></i></div>
+		<div id="hv-credits">piyenji created by <a href="http://www.hellovelocity.com" target="_blank">&copy;Hello Velocity 2017</a></div>
 		<% } %>
 		
 		<div id="master-screen">
@@ -103,7 +104,7 @@
 			<% } %>
 			
 			<div id="convo-screen" class="screen active" style="overflow-y:scroll !important;">
-				<div id="convo" style="padding-top:110px;">
+				<div id="convo">
 					
 					<div class="bubble-set">
 						<div class="bubble-container from-container">
@@ -152,7 +153,7 @@
 							<div class="frombubble bubble ">Right here! 😃 </div>
 						</div>
 						<div class="bubble-container from-container">
-							<div class="inline-sticker"><img src="/images/appstore.png" height="80px"></div>
+							<div class="inline-sticker"><a href="https://itunes.apple.com/us/app/piyenji-sticker-gallery/id1233637881?mt=8" target="_blank"><img src="/images/appstore.png" height="80px"></a></div>
 						</div>
 					</div>
 					
@@ -170,19 +171,19 @@
 							<div class="frombubble bubble ">@digijing  ⬇️ 👀</div>
 						</div>
 						<div class="bubble-container from-container">
-							<div class="inline-sticker"><img src="/images/digijing-haha.gif" width="80%"></div>
+							<div class="inline-sticker"><img src="/images/digijing-haha.gif" width="150px"></div>
 						</div>
 						<div class="bubble-container from-container">
 							<div class="frombubble bubble ">@JamesOrlando ⬇️ 👀</div>
 						</div>
 						<div class="bubble-container from-container">
-							<div class="inline-sticker"><img src="/images/digijing-eyeballs.gif" height="80%"></div>
+							<div class="inline-sticker"><img src="/images/james-ssh.png" height="150px"></div>
 						</div>
 						<div class="bubble-container from-container">
-							<div class="frombubble bubble ">@artist3 ⬇️ 👀</div>
+							<div class="frombubble bubble ">@HE+HU ⬇️ 👀</div>
 						</div>
 						<div class="bubble-container from-container">
-							<div class="inline-sticker"><img src="/images/digijing-facemask.gif" height="80%"></div>
+							<div class="inline-sticker"><img src="/images/hehu-chick-melon.gif" height="150px"></div>
 						</div>
 					</div>
 						
@@ -197,13 +198,13 @@
 							<div class="frombubble bubble ">Yeah! But if you are feeling thankful you can hit up these bbs on Venmo →</div>
 						</div>
 						<div class="bubble-container from-container">
-							<div class="frombubble bubble ">@digijing</div>
+							<div class="frombubble bubble "><a href="https://venmo.com/digijing" target="_blank">@digijing</a></div>
 						</div>
 						<div class="bubble-container from-container">
-							<div class="frombubble bubble ">@artist2</div>
+							<div class="frombubble bubble "><a href="https://venmo.com/James-Orlando-1" target="_blank">@James-Orlando-1</a></div>
 						</div>
 						<div class="bubble-container from-container">
-							<div class="frombubble bubble ">@artist3</div>
+							<div class="frombubble bubble "><a href="https://venmo.com/hewei09" target="_blank">@hewei09</a></div>
 						</div>
 						<div class="bubble-container from-container">
 							<div class="frombubble bubble ">💵 💰 🤑 ♥️ </div>
@@ -276,6 +277,12 @@
 						</div>
 					</div>	
 					
+					<div class="bubble-set">
+						<div class="bubble-container from-container">
+							<div class="frombubble bubble ">BTW, we also sell lenticular prints of these stickers. So drop us an <a href="mailto:friend@hellovelocity.com">email</a> if you would like to check them out!</div>
+						</div>
+					</div>
+					
 					<% if (mobile == "true") { %>
 					<!-- if safari! -->
 					<br><br>
@@ -303,19 +310,19 @@
 						<div class="row">
 							<div id="home" class="col-xs-3 contact active">
 								<div class="contact-img"><img src="/images/piyenji-logo.png" style="width:40px;"></div>
-								<div class="contact-name">home</div>
+								<div class="contact-name">Home</div>
 							</div>	
 							<div id="artist1" class="col-xs-3 contact">
 								<div class="contact-img"><img src="/images/digijing-soazn.gif" style="width:40px;"></div>
-								<div class="contact-name">digijing</div>
+								<div class="contact-name">Digijing</div>
 							</div>	
 							<div id="artist2" class="col-xs-3 contact">
-								<div class="contact-img"><img src="/images/hv-logo.png" style="width:40px;"></div>
-								<div class="contact-name">jameso</div>
+								<div class="contact-img"><img src="/images/hehu-banana-a.gif" style="width:40px;"></div>
+								<div class="contact-name">He+Hu</div>
 							</div>	
 							<div id="artist3" class="col-xs-3 contact">
-								<div class="contact-img"><img src="/images/hv-logo.png" style="width:40px;"></div>
-								<div class="contact-name">artist3</div>
+								<div class="contact-img"><img src="/images/james-head.png" style="width:40px;"></div>
+								<div class="contact-name">James</div>
 							</div>	
 						</div>
 					</div>
@@ -325,32 +332,20 @@
 			<div id="artist1-page" class="screen artist-screen" style="padding-top:110px;">
 				<div class="artist-page-body">
 					<div class="row">
-						<div class="col-xs-6"><img src="/images/digijing-haha.gif" height="140px"></div>
-						<div class="col-xs-6"><img src="/images/digijing-eyeballs.gif" height="140px"></div>
+						<div class="col-xs-6"><img src="/images/digijing-haha.gif" height="110px"></div>
+						<div class="col-xs-6"><img src="/images/digijing-eyeballs.gif" height="110px"></div>
 					</div>
 					<div class="row">
-						<div class="col-xs-6"><img src="/images/digijing-facemask.gif" height="140px"></div>
-						<div class="col-xs-6"><img src="/images/digijing-soazn.gif" height="140px"></div>
+						<div class="col-xs-6"><img src="/images/digijing-facemask.gif" height="110px"></div>
+						<div class="col-xs-6"><img src="/images/digijing-soazn.gif" height="110px"></div>
 					</div>
 					<div class="row">
-						<div class="col-xs-6"><img src="/images/hv-logo.png"></div>
-						<div class="col-xs-6"><img src="/images/hv-logo.png"></div>
+						<div class="col-xs-6"><img src="/images/digijing-buddha.gif" height="110px"></div>
+						<div class="col-xs-6"><img src="/images/digijing-coin.gif" height="110px"></div>
 					</div>
 					<div class="row">
-						<div class="col-xs-6"><img src="/images/hv-logo.png"></div>
-						<div class="col-xs-6"><img src="/images/hv-logo.png"></div>
-					</div>
-					<div class="row">
-						<div class="col-xs-6"><img src="/images/hv-logo.png"></div>
-						<div class="col-xs-6"><img src="/images/hv-logo.png"></div>
-					</div>
-					<div class="row">
-						<div class="col-xs-6"><img src="/images/hv-logo.png"></div>
-						<div class="col-xs-6"><img src="/images/hv-logo.png"></div>
-					</div>
-					<div class="row">
-						<div class="col-xs-6"><img src="/images/hv-logo.png"></div>
-						<div class="col-xs-6"><img src="/images/hv-logo.png"></div>
+						<div class="col-xs-6"><img src="/images/digijing-money.gif" height="110px"></div>
+						<div class="col-xs-6"><img src="/images/digijing-peace.gif" height="110px"></div>
 					</div>
 				</div>
 			</div>
@@ -358,32 +353,20 @@
 			<div id="artist2-page" class="screen artist-screen" style="padding-top:110px;">
 				<div class="artist-page-body">
 					<div class="row">
-						<div class="col-xs-6">artist2</div>
-						<div class="col-xs-6"><img src="/images/hv-logo.png"></div>
+						<div class="col-xs-6"><img src="/images/hehu-banana-a.gif" height="110px"></div>
+						<div class="col-xs-6"><img src="/images/hehu-banana-b.gif" height="110px"></div>
 					</div>
 					<div class="row">
-						<div class="col-xs-6"><img src="/images/hv-logo.png"></div>
-						<div class="col-xs-6"><img src="/images/hv-logo.png"></div>
+						<div class="col-xs-6"><img src="/images/hehu-chick-cheers.gif" height="110px"></div>
+						<div class="col-xs-6"><img src="/images/hehu-chick-lualu.gif" height="110px"></div>
 					</div>
 					<div class="row">
-						<div class="col-xs-6"><img src="/images/hv-logo.png"></div>
-						<div class="col-xs-6"><img src="/images/hv-logo.png"></div>
+						<div class="col-xs-6"><img src="/images/hehu-eat-drum.gif" height="110px"></div>
+						<div class="col-xs-6"><img src="/images/hehu-egg-necklace.gif" height="110px"></div>
 					</div>
 					<div class="row">
-						<div class="col-xs-6"><img src="/images/hv-logo.png"></div>
-						<div class="col-xs-6"><img src="/images/hv-logo.png"></div>
-					</div>
-					<div class="row">
-						<div class="col-xs-6"><img src="/images/hv-logo.png"></div>
-						<div class="col-xs-6"><img src="/images/hv-logo.png"></div>
-					</div>
-					<div class="row">
-						<div class="col-xs-6"><img src="/images/hv-logo.png"></div>
-						<div class="col-xs-6"><img src="/images/hv-logo.png"></div>
-					</div>
-					<div class="row">
-						<div class="col-xs-6"><img src="/images/hv-logo.png"></div>
-						<div class="col-xs-6"><img src="/images/hv-logo.png"></div>
+						<div class="col-xs-6"><img src="/images/hehu-lick.gif" height="110px"></div>
+						<div class="col-xs-6"><img src="/images/hehu-tango-chick.gif" height="110px"></div>
 					</div>
 				</div>
 			</div>
@@ -391,32 +374,24 @@
 			<div id="artist3-page" class="screen artist-screen" style="padding-top:110px;">
 				<div class="artist-page-body">
 					<div class="row">
-						<div class="col-xs-6">artist3</div>
-						<div class="col-xs-6"><img src="/images/hv-logo.png"></div>
+						<div class="col-xs-6"><img src="/images/james-flirty.png" height="110px"></div>
+						<div class="col-xs-6"><img src="/images/james-head.png" height="110px"></div>
 					</div>
 					<div class="row">
-						<div class="col-xs-6"><img src="/images/hv-logo.png"></div>
-						<div class="col-xs-6"><img src="/images/hv-logo.png"></div>
+						<div class="col-xs-6"><img src="/images/james-ssh.png" height="110px"></div>
+						<div class="col-xs-6"><img src="/images/james-stoned-bae.png" height="110px"></div>
 					</div>
 					<div class="row">
-						<div class="col-xs-6"><img src="/images/hv-logo.png"></div>
-						<div class="col-xs-6"><img src="/images/hv-logo.png"></div>
+						<div class="col-xs-6"><img src="/images/james-surprise.png" height="110px"></div>
+						<div class="col-xs-6"><img src="/images/james-hair-1.png" height="110px"></div>
 					</div>
 					<div class="row">
-						<div class="col-xs-6"><img src="/images/hv-logo.png"></div>
-						<div class="col-xs-6"><img src="/images/hv-logo.png"></div>
+						<div class="col-xs-6"><img src="/images/james-hair-2.png" height="110px"></div>
+						<div class="col-xs-6"><img src="/images/james-hair-3.png" height="110px"></div>
 					</div>
 					<div class="row">
-						<div class="col-xs-6"><img src="/images/hv-logo.png"></div>
-						<div class="col-xs-6"><img src="/images/hv-logo.png"></div>
-					</div>
-					<div class="row">
-						<div class="col-xs-6"><img src="/images/hv-logo.png"></div>
-						<div class="col-xs-6"><img src="/images/hv-logo.png"></div>
-					</div>
-					<div class="row">
-						<div class="col-xs-6"><img src="/images/hv-logo.png"></div>
-						<div class="col-xs-6"><img src="/images/hv-logo.png"></div>
+						<div class="col-xs-6"><img src="/images/james-hair-4.png" height="110px"></div>
+						<div class="col-xs-6"></div>
 					</div>
 				</div>
 			</div>

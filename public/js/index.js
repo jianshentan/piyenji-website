@@ -75,4 +75,10 @@ $(document).ready(function() {
     }
   });
   
+  // video to full screen at all screen sizes:
+  if ($("body").width() > 1.6 * $("body").height()) {
+    $("#video").height($("body").height() * 1.6) 
+  }
+  
+  
 });

@@ -23,12 +23,13 @@ body {
   z-index: 100;
 }
 .screen {
-  width: 375px;
-  height: 664px;
+  width: 296px;
+  height: 524px;
+  margin-top: 71px;
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
+  font-size: 14px;
   z-index: 100;
-  
   position: absolute;
   left: 50%;
   top: 50%;
@@ -157,6 +158,9 @@ body {
   background-color: white;
   text-align: center;
 }
+.artist-page-body .row {
+  margin-bottom: 12px;
+}
 
 /* convo screen */
 
@@ -166,6 +170,7 @@ body {
 }
 #convo {
   position: relative;
+  padding-top: 80px;
 }
 .bubble-set {
   margin-top: 10px;
@@ -214,19 +219,18 @@ body {
   left: 50%;
   top: 50%;
   transform: translateX(-50%) translateY(-50%);
-  width: 1400px;
+  width: 1100px;
   z-index: 101;
   pointer-events: none;
 }
-
 #video {
   min-width: 180vh;
   width: 100vw;
   height: 100vh;
   position: fixed;
-  top: 0px;
+  top: 50%;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-50%) translateY(-50%);
 }
 #logo {
   z-index: 10;
@@ -239,6 +243,21 @@ body {
   width: 100vw;
   height: 100vh; /* calc(100vh - 50px); */
   z-index: 10;
+}
+#hv-credits {
+  color: black;
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  z-index: 102;
+  background-color: #E6E5EB;
+  padding: 10px;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  border-bottom-left-radius: 16px;
+}
+#hv-credits a {
+  color: #30A3FC;
 }
 
 /* --- Hv logo --- */
