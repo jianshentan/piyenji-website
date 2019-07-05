@@ -1,0 +1,9 @@
+name: Hello Velocity
+url: https://www.hellovelocity.com
+description: Hello Velocity's
+twitter: 
+  username: organizejs
+  card: summary_large_image
+markdown: kramdown
+plugins:
+  - jekyll-seo-tag
